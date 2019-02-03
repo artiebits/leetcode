@@ -11,12 +11,12 @@ var maxSubArray = function(nums) {
     return 0;
   }
 
-  let prev = nums[0];
-  let answer = prev;
+  let localMax = nums[0];
+  let answer = localMax;
 
   for (let index = 1; index < nums.length; index++) {
-    prev = Math.max(prev + nums[index], nums[index]);
-    answer = Math.max(answer, prev);
+    localMax = Math.max(localMax + nums[index], nums[index]);
+    answer = Math.max(answer, localMax);
   }
 
   return answer;
