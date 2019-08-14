@@ -22,7 +22,7 @@ var maxProfit = function(prices) {
   return profit;
 };
 
-// Time complexity : O(n) - O(n). Only a single pass is needed.
-// Space complexity : O(1) - O(1). Only two variables are used.
+// Time complexity: O(n), only a single pass is needed.
+// Space complexity: O(1), only two variables are used.
 assert.equal(maxProfit([7, 1, 5, 3, 6, 4]), 5);
 assert.equal(maxProfit([7, 6, 4, 3, 1]), 0);
